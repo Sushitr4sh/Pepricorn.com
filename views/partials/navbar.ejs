@@ -1,0 +1,226 @@
+<header class="fixed top-0 left-0 w-full bg-white shadow-md" style="z-index: 2;">
+    <div class="flex flex-col px-4 md:px-8 lg:px-16 py-4 border-b border-gray-300">
+        <ul class="flex justify-between gap-x-8 text-gray-400 text-sm">
+            <div class="hidden lg:flex gap-x-8">
+                <li>
+                    <a href="/contact" class="hover:text-blue-600 transition duration-250 ease-in"
+                        id="contact-us">Contact us</a>
+                </li>
+                <li>
+                    <a href="/about" class="hover:text-blue-600 transition duration-250 ease-in" id="about-us">About
+                        us</a>
+                </li>
+                <li>
+                    <a href="/faq" class="hover:text-blue-600 transition duration-250 ease-in" id="faq">FAQ</a>
+                </li>
+            </div>
+            <div class="hidden lg:flex gap-x-8">
+                <select name="" id="" class="focus:outline-none">
+                    <option value="rupiah">Rp. IDR</option>
+                    <option value="dollar">$ USD</option>
+                </select>
+                <div class="flex gap-x-1 items-center">
+                    <img src="img/indonesia.png" class="w-5 h-5 max-w-full max-h-full mr-2 cursor-pointer" />
+                    <select name="" id="language-selector" class="focus:outline-none">
+                        <option value="english">English</option>
+                        <option value="indonesia">Indonesia</option>
+                    </select>
+                </div>
+            </div>
+        </ul>
+        <nav class="container lg:mt-4">
+            <ul class="grid grid-cols-2 lg:flex justify-between gap-x-8 items-center">
+                <div class="lg:flex gap-x-8 items-center">
+                    <button class="hidden lg:block font-bold text-3xl" id="home">P<span
+                            class="text-blue-600">epricorn.com</span></button>
+                    <li>
+                        <div class="flex py-2 px-3 rounded-lg bg-gray-100">
+                            <div class="hidden lg:block relative w-32">
+                                <select
+                                    class="text-sm bg-white text-gray-700 rounded-lg border border-gray-200 font-medium py-2 px-8 hover:bg-blue-600 hover:text-white focus:border-none focus:outline-none appearance-none cursor-pointer transition duration-250 ease-in">
+                                    <option id="nav-product">Products</option>
+                                    <option>Services</option>
+                                    <option>Event</option>
+                                </select>
+                            </div>
+                            <input
+                                class="flex-1 appearance-none text-sm w-full py-2 px-2 bg-gray-100 text-gray-700 placeholder-gray-500 rounded leading-tight border border-gray-100 focus:outline-none focus:border focus:border-blue-600"
+                                type="text" placeholder="Search on Pepricorn . . ." id="nav-search" />
+                        </div>
+                    </li>
+                </div>
+                <div class="hidden lg:flex gap-x-4 lg:gap-x-12 items-center">
+                    <li class="flex items-center">
+                        <img src="img/price-tag.png" class="w-5 h-5 max-w-full max-h-full mr-2" />
+                        <a href="" class="hover:text-blue-600 transition duration-250 ease-in" id="best-offers">Best offers</a>
+                    </li>
+                    <li>
+                        <a href="" class="hover:text-blue-600 transition duration-250 ease-in"
+                            id="discover">Discover</a>
+                    </li>
+                </div>
+                <div class="flex gap-x-4">
+                    <a href="login.html">
+                        <li>
+                            <button
+                                class="text-blue-600 border-2 border-blue-600 px-4 py-1 rounded-lg hover:bg-blue-600 hover:text-white transition duration-250 ease-in font-bold"
+                                id="sign-in">Sign in</button>
+                        </li>
+                    </a>
+                    <li>
+                        <button
+                            class="text-white border-2 border-blue-600 px-4 py-1 rounded-lg bg-blue-600 transition duration-250 ease-in font-bold hover:bg-blue-800"
+                            id="sign-up">Sign up</button>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="hidden md:flex flex justify-between items-center px-16 py-4">
+        <div class="flex items-center cursor-pointer">
+            <div class="flex items-center justify-center">
+                <button id="dropdownDefault"
+                    class="text-white bg-blue-600 hover:bg-blue-800 focus:ring-4 focus:outline-none font-medium rounded-lg text-xs px-4 py-2.5 text-center inline-flex items-center transition duration-250 ease-in"
+                    type="button">
+                    Filter by category
+                    <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+
+                <!-- Dropdown menu -->
+                <div id="dropdown"
+                    class="absolute mt-[28rem] z-10 hidden w-56 p-3 bg-white border-2 border-gray-200 rounded-lg shadow-md">
+                    <h6 class="mb-3 text-sm font-medium text-gray-900">
+                        Category
+                    </h6>
+                    <ul class="space-y-2 text-sm" aria-labelledby="dropdownDefault">
+                        <li class="flex items-center">
+                            <input id="apple" type="checkbox" value=""
+                                class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500" />
+
+                            <label for="apple" class="ml-2 text-sm font-medium text-gray-900">
+                                Cleanser (56)
+                            </label>
+                        </li>
+
+                        <li class="flex items-center">
+                            <input id="fitbit" type="checkbox" value=""
+                                class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500" />
+
+                            <label for="fitbit" class="ml-2 text-sm font-medium text-gray-900">
+                                Toners (56)
+                            </label>
+                        </li>
+
+                        <li class="flex items-center">
+                            <input id="dell" type="checkbox" value=""
+                                class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500" />
+
+                            <label for="dell" class="ml-2 text-sm font-medium text-gray-900">
+                                Moisturizers (56)
+                            </label>
+                        </li>
+
+                        <li class="flex items-center">
+                            <input id="asus" type="checkbox" value="" checked
+                                class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500" />
+
+                            <label for="asus" class="ml-2 text-sm font-medium text-gray-900">
+                                Serums (97)
+                            </label>
+                        </li>
+
+                        <li class="flex items-center">
+                            <input id="logitech" type="checkbox" value="" checked
+                                class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500" />
+
+                            <label for="logitech" class="ml-2 text-sm font-medium text-gray-900">
+                                Masks (97)
+                            </label>
+                        </li>
+
+                        <li class="flex items-center">
+                            <input id="msi" type="checkbox" value="" checked
+                                class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500" />
+
+                            <label for="msi" class="ml-2 text-sm font-medium text-gray-900">
+                                Exfoliators (97)
+                            </label>
+                        </li>
+
+                        <li class="flex items-center">
+                            <input id="bosch" type="checkbox" value="" checked
+                                class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500" />
+
+                            <label for="bosch" class="ml-2 text-sm font-medium text-gray-900">
+                                Eye Care (176)
+                            </label>
+                        </li>
+
+                        <li class="flex items-center">
+                            <input id="sony" type="checkbox" value=""
+                                class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500" />
+
+                            <label for="sony" class="ml-2 text-sm font-medium text-gray-900">
+                                Sun Care (234)
+                            </label>
+                        </li>
+
+                        <li class="flex items-center">
+                            <input id="samsung" type="checkbox" value="" checked
+                                class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500" />
+
+                            <label for="samsung" class="ml-2 text-sm font-medium text-gray-900">
+                                Acne Treatments (76)
+                            </label>
+                        </li>
+
+                        <li class="flex items-center">
+                            <input id="canon" type="checkbox" value=""
+                                class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500" />
+
+                            <label for="canon" class="ml-2 text-sm font-medium text-gray-900">
+                                Anti-Aging (49)
+                            </label>
+                        </li>
+
+                        <li class="flex items-center">
+                            <input id="microsoft" type="checkbox" value=""
+                                class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500" />
+
+                            <label for="microsoft" class="ml-2 text-sm font-medium text-gray-900">
+                                Brightening (45)
+                            </label>
+                        </li>
+
+                        <li class="flex items-center">
+                            <input id="razor" type="checkbox" value=""
+                                class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500" />
+
+                            <label for="razor" class="ml-2 text-sm font-medium text-gray-900">
+                                Oil Control (49)
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-x-16">
+            <a class="hover:text-blue-600 transition duration-250 ease-in cursor-pointer" id="bestproducts">Best
+                products</a>
+            <a href="" class="hover:text-blue-600 transition duration-250 ease-in">Eshop plus</a>
+            <a href="" class="hover:text-blue-600 transition duration-250 ease-in">Customer Service</a>
+            <a href="" class="hover:text-blue-600 transition duration-250 ease-in">Best sellers</a>
+        </div>
+        <div class="flex items-center">
+            <img src="img/location-pin.png" class="w-5 h-5 max-w-full max-h-full mr-2" />
+            <select href="" class="hover:text-blue-600 transition duration-250 ease-in cursor-pointer">
+                <option value="">Indonesia, Tangerang</option>
+            </select>
+        </div>
+    </div>
+</header>
